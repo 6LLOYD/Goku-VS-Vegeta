@@ -33,7 +33,7 @@ class App extends Component {
         <hr />
         <div className="row">
           <Vegeta
-            name="Vegeta"
+            render={(saiyan) => saiyan && "Vegeta"}
             life={this.state.vegeta}
             reduceHandler={this.reduceLife}
           />
